@@ -36,7 +36,7 @@
             animation-iteration-count: infinite;
             /*animation-play-state: running;*/
             background-repeat: repeat-x;
-            animation-timing-function: linear;
+            animation-timing-function: ease-out;
             display: block;
             z-index: 1;
         }
@@ -60,7 +60,7 @@
             animation-duration: 30s;
             animation-iteration-count: infinite;
             background-repeat: repeat-x;
-            animation-timing-function: linear;
+            animation-timing-function: ease-out;
 
         }
         .car{
@@ -107,13 +107,20 @@
             animation-timing-function: ease-out;
         }
         .right_wheel{
-            width: 250px;
-            height: 250px;
+            /*width: 250px;*/
+            /*height: 250px;*/
+            /*position: absolute;*/
+            /*!*bottom: 0px;*!*/
+            /*top: 511px;*/
+            /*left: 835px;*/
+            /*z-index: 2;*/
+
+            left: 80px;
             position: absolute;
-            /*bottom: 0px;*/
-            top: 511px;
-            left: 835px;
-            z-index: 2;
+            animation-name: wheel_animation;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
         }
         .wheel{
             left: 50%;
@@ -171,9 +178,9 @@
     <div class="wheel">
         <img src="../case_06/assets/img/wheel.png" alt="leftWheel" width="80px" height="80px" class="left_wheel">
     </div>
-<!--    <div class="wheel">-->
-<!--        <img src="../case_06/assets/img/wheel.png" alt="rightWheel" width="80px" height="80px" class="right_wheel">-->
-<!--    </div>-->
+    <div class="wheel">
+        <img src="../case_06/assets/img/wheel.png" alt="rightWheel" width="80px" height="80px" class="right_wheel">
+    </div>
 
 
 

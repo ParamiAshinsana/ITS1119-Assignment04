@@ -15,15 +15,29 @@
           height: 100vh;
           background-size: cover;
           background-image: url("../case_06/assets/img/sky.jpg");
+
+          /*background-position: center;*/
+          /*width: 100%;*/
+          position: relative;
+          overflow-x: hidden;
       }
       .road{
           background-image: url("../case_06/assets/img/road.jpg");
-          width: 1535px;
+          /*width: 1535px;*/
+          width: 2000%;
           height: 250px;
           position: absolute;
           bottom: 0;
           right: 0;
           left: 0;
+          display: block;
+
+          animation-name: road_animation;
+          animation-duration: 6s;
+          animation-iteration-count: infinite;
+          /*animation-play-state: running;*/
+          background-repeat: repeat-x;
+          animation-timing-function: linear;
       }
       .city{
          background-image: url("../case_06/assets/img/city.png");
@@ -36,6 +50,7 @@
           bottom: 0;
           top: 208px;
           /*margin: auto;*/
+
       }
       .car{
           /*background-image: url("../case_06/assets/img/car.png");*/
@@ -66,14 +81,21 @@
             left: 800px;
         }
 
+        @keyframes road_animation {
+            100%{
+                transform: translateX(-75%);
+            }
+        }
 
     </style>
 
 </head>
 <body>
 <section>
-    <div class="sky"></div>
-    <div class="road"></div>
+    <div class="sky">
+        <div class="road"></div>
+    </div>
+
     <div class="city"></div>
     <div class="car">
         <!--        background-image: url("../case_06/assets/img/car.png");-->

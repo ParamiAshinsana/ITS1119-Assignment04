@@ -69,7 +69,7 @@
             /*height: 10px;*/
             position: absolute;
             left: 450px;
-            top: 410px;
+            top: 425px;
             /*margin: auto;*/
             /*display: inline-block;*/
 
@@ -84,15 +84,27 @@
         }
         .left_wheel{
             /*background-image: url("../case_06/assets/img/wheel.png");*/
-            width: 250px;
-            height: 250px;
+            /*width: 250px;*/
+            /*height: 250px;*/
+            /*position: absolute;*/
+            /*top: 511px;*/
+            /*!*bottom: 0;*!*/
+            /*left: 590px;*/
+            /*!*right: 0;*!*/
+            /*!*margin: auto;*!*/
+            /*z-index: 2;*/
+
+            /*animation-name: wheel_animation;*/
+            /*animation-duration: 2s;*/
+            /*animation-iteration-count: infinite;*/
+            /*animation-timing-function: linear;*/
+
+            right: 90px;
             position: absolute;
-            top: 511px;
-            /*bottom: 0;*/
-            left: 590px;
-            /*right: 0;*/
-            /*margin: auto;*/
-            z-index: 2;
+            animation-name: wheel_animation;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
         }
         .right_wheel{
             width: 250px;
@@ -101,6 +113,13 @@
             /*bottom: 0px;*/
             top: 511px;
             left: 835px;
+            z-index: 2;
+        }
+        .wheel{
+            left: 50%;
+            bottom: 178px;
+            /*transform: translateX(-50%);*/
+            position: absolute;
             z-index: 2;
         }
 
@@ -114,6 +133,11 @@
             100%{
                 /*transform: translateX(-75%);*/
                 transform: translateX(-1400px);
+            }
+        }
+        @keyframes wheel_animation {
+            100%{
+                transform: rotate(360deg);
             }
         }
 
@@ -134,12 +158,22 @@
     </div>
 
 
-    <div class="left_wheel">
-        <img src="../case_06/assets/img/wheel.png" alt="lw" width="80px" height="80px">
+<!--    <div class="left_wheel">-->
+<!--        <img src="../case_06/assets/img/wheel.png" alt="lw" width="80px" height="80px">-->
+<!--    </div>-->
+<!--    <div class="right_wheel">-->
+<!--        <img src="../case_06/assets/img/wheel.png" alt="lw" width="80px" height="80px">-->
+<!--    </div>-->
+
+
+
+
+    <div class="wheel">
+        <img src="../case_06/assets/img/wheel.png" alt="leftWheel" width="80px" height="80px" class="left_wheel">
     </div>
-    <div class="right_wheel">
-        <img src="../case_06/assets/img/wheel.png" alt="lw" width="80px" height="80px">
-    </div>
+<!--    <div class="wheel">-->
+<!--        <img src="../case_06/assets/img/wheel.png" alt="rightWheel" width="80px" height="80px" class="right_wheel">-->
+<!--    </div>-->
 
 
 

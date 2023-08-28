@@ -10,7 +10,7 @@
             margin: 0;
         }
         .sky{
-            width: 100%;
+            width: 100vw;
             height: 100vh;
             background-size: cover;
             background-image: url("../case_06/assets/img/sky.jpg");
@@ -68,14 +68,14 @@
             /*width: 10px;*/
             /*height: 10px;*/
             position: absolute;
-            left: 450px;
+            left: 770px;
             top: 425px;
             /*margin: auto;*/
             /*display: inline-block;*/
 
 
             width: 400px;
-            left: 50%;
+            /*left: 50%;*/
             bottom: 100px;
             transform: translateX(-50%);
             position: absolute;
@@ -125,21 +125,18 @@
         .wheel{
             left: 50%;
             bottom: 178px;
-            /*transform: translateX(-50%);*/
             position: absolute;
             z-index: 2;
         }
 
         @keyframes road_animation {
             100%{
-                /*transform: translateX(-75%);*/
-                transform: translateX(-3400px);
+                transform: translateX(-8%);
             }
         }
         @keyframes city_animation {
             100%{
-                /*transform: translateX(-75%);*/
-                transform: translateX(-1400px);
+                transform: translateX(-4%);
             }
         }
         @keyframes wheel_animation {
@@ -171,9 +168,6 @@
 <!--    <div class="right_wheel">-->
 <!--        <img src="../case_06/assets/img/wheel.png" alt="lw" width="80px" height="80px">-->
 <!--    </div>-->
-
-
-
 
     <div class="wheel">
         <img src="../case_06/assets/img/wheel.png" alt="leftWheel" width="80px" height="80px" class="left_wheel">
